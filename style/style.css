@@ -1,0 +1,47 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    --violet: hsl(263, 55%, 52%);
+    --gray_blue: hsl(217, 19%, 35%);
+    --black_blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light_gray: hsl(0, 0%, 81%);
+    --light_gray_blue: hsl(210, 46%, 95%);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--light_gray_blue);
+}
+#daniel {
+    background:  var(--violet) url("../images/bg-pattern-quotation.svg")  right 25% top 5% no-repeat;
+    background-size: 80px 80px;
+}
+
+#jonathan {
+    background-color: var(--gray_blue);
+}
+
+#jeanette {
+    background-color: var(--white);
+}
+
+#patrick {
+    background-color: var(--black_blue);
+}
+
+ @media only screen  and (max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+
+    #daniel {
+        background-size: 50px 50px;
+    }
+ }
